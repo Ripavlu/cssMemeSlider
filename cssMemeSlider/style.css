@@ -8,5 +8,49 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: #ffffff;
+    background-color: #e7cba8;
+    background-image: url(img/bg.png);
 }
+
+.slider_block {
+    background-color: rgba(54,54,124,0.8); 
+    border-radius: 1.5em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 50px auto 50px auto;
+    padding: 15px 0 15px 0;
+    overflow: hidden;
+}
+
+.image_block {
+    display: flex;
+    margin: 0 auto 20px auto;
+
+}
+
+.alt_control {
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 11%;
+    padding-left: 11%;
+    
+}
+.slide_img {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+}
+ img {
+    width: 100%;
+    
+ }
+
+ p {
+    font-size: 2em;
+    color: #fff5e9;
+ }
+ 
