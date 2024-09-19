@@ -35,24 +35,32 @@ input[name="MemeSlider"] {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    
+    overflow: hidden;
 }
 .slides {
     display: flex;
     box-sizing: border-box;
-    width: 600%;
+    width: 500%;
     height: 100%;
     overflow: hidden;
 }
 .slide {
-    width: 17%;
+    width: 20%;
     transition: all .5s ease;
+    display: flex;
+    flex-direction: column;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
 }
 .control_panel {
     display: flex;
     position: absolute;
+    top: 93%;
     bottom: 5%;
-    right: 25%;
+    right: 29%;
 }
  .control {
     width: 1.5em;
@@ -69,6 +77,34 @@ input[name="MemeSlider"] {
     background-color: #bd9360;
  }
 
-
-
+#slide1:checked ~ .sl {
+    margin-left: 0;
+}
+#slide2:checked ~ .sl {
+    margin-left: -20%;
+}
+#slide3:checked ~ .sl {
+    margin-left: -40%;
+}
+#slide4:checked ~ .sl {
+    margin-left: -60%;
+}
+#slide5:checked ~ .sl {
+    margin-left: -80%;
+}
+#slide1:checked ~ .control_panel > .c1 {
+    background-color: #cf730a;
+}
+#slide2:checked ~ .control_panel > .c2 {
+    background-color: #cf730a;
+}
+#slide3:checked ~ .control_panel > .c3 {
+    background-color: #cf730a;
+}
+#slide4:checked ~ .control_panel > .c4 {
+    background-color: #cf730a;
+}
+#slide5:checked ~ .control_panel > .c5 {
+    background-color: #cf730a;
+}
  
