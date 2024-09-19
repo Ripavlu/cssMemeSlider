@@ -11,7 +11,14 @@ body {
     background-color: #e7cba8;
     background-image: url(img/bg.png);
 }
-
+p {
+    font-size: 2em;
+    color: #fff5e9;
+ }
+input[name="MemeSlider"] {
+    position: absolute;
+    visibility: hidden;
+}
 .slider_block {
     background-color: rgba(54,54,124,0.8); 
     border-radius: 1.5em;
@@ -22,35 +29,46 @@ body {
     margin: 50px auto 50px auto;
     padding: 15px 0 15px 0;
     overflow: hidden;
-}
-
-.image_block {
-    display: flex;
-    margin: 0 auto 20px auto;
-
-}
-
-.alt_control {
-    max-width: 1024px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 11%;
-    padding-left: 11%;
     
 }
-.slide_img {
+.slider {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.slides {
     display: flex;
     box-sizing: border-box;
-    width: 100%;
+    width: 600%;
+    height: 100%;
+    overflow: hidden;
 }
- img {
-    width: 100%;
-    
+.slide {
+    width: 17%;
+    transition: all .5s ease;
+}
+.control_panel {
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    right: 25%;
+}
+ .control {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 5px;
+    background-color: #e7cba8;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .5s ease;
  }
 
- p {
-    font-size: 2em;
-    color: #fff5e9;
+ .control:hover {
+    transform: scale(1.2);
+    background-color: #bd9360;
  }
+
+
+
  
